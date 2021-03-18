@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+
+body {
+    background-image: url("/assets/images/main-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#logo {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#logo>span {
+    font-size: 1.4rem;
+    color:red;
+    letter-spacing: 2px;
+}
+
+.nav-head {
+    font-family: "Ranchers", sans-serif;
+    line-height: 60px;
+    background-color: transparent!important;
+    color: #fff !important;
+}
+
