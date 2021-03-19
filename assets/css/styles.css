@@ -1,14 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
-
 body {
-    background-image: url("/assets/images/main-bg.jpg");
-    background-repeat: no-repeat;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Ranchers", sans-serif;
+    background-image: url('/assets/images/main-bg.jpg');
     background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
+    overflow-x: hidden;
 }
 
+.body {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.body::before{
+      content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+}
+/*                       Navigation                   */
 #logo {
     font-size: 1.8rem;
     letter-spacing: 2px;
@@ -23,9 +41,70 @@ body {
 }
 
 .nav-head {
-    font-family: "Ranchers", sans-serif;
     line-height: 60px;
-    background-color: transparent!important;
+    background-color: rgba(0, 136, 248, 0.877)!important;
     color: #fff !important;
+    border-bottom: 1px solid white;
+    border-width: thick;
+    letter-spacing: 2px;
 }
 
+/*                      Quiz Container                          */
+
+.quiz-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh; 
+    background-color: rgba(3, 73, 179, 0.4);
+}
+
+.quiz-content>button {
+    border: 1px solid white;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    display:inline-block;
+    letter-spacing: 2px;
+    line-height: 40px;
+    width: 80px;
+    margin: 0 5px;
+    position: relative;
+    z-index: 10;
+    transition: 1s all;
+}
+
+
+.quiz-content>button:hover{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    letter-spacing: 4px;
+    transform: scale(1.3, 1.3);
+}
+
+
+
+/*                  footer elements             */
+
+.footer-elements {
+      background-color: rgba(0, 136, 248, 0.877);
+      opacity: 0.877;
+      line-height: 70px;
+      text-align: center;
+      border-top: 2px solid white;
+      border-width: thick;
+}      
+
+.icons>div>a {
+
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: 1s all;
+}
+
+.icons>div>a:hover {
+    color: rgba(45, 236, 243, 0.877);
+}
