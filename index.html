@@ -42,15 +42,24 @@
         </nav>
     </header>
     <section class="body">
-        <div class="quiz-container">
+        <div class="quiz-landing">
             <div class="quiz-content">
-                <button type="button">Start</button>
-                <button type="button">Rules</button>
+                <button type="button" id="startGame">Start</button>
+                <button type="button" id="gameInfo">Rules</button>
+            </div>
+       
+        <div class="quiz-start  container row d-none">
+            <div class="col-sm-4 question mb-3"></div>
+            <div class="col-sm-5 choices">
             </div>
         </div>
+        <div class="quiz-rules">
 
+        </div>
+        <div><button type="button" id="nextBtn" class="d-none">Next</button></div>
+         </div>
     </section>
-    <footer class="footer-elements">
+    <footer class="footer-elements fixed">
         <div class="icons d-flex justify-content-center">
             <div><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></div>
             <div><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></div>
