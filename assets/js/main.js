@@ -31,7 +31,8 @@ const startGameBtn = document.querySelector('#startGame');
 const questionDiv = document.querySelector('.question');
 const choiceBox = document.querySelector('.choices');
 const nextBtn = document.querySelector('#nextBtn');
-
+const usrScore = document.querySelector('#points');
+const quesDisplay = document.querySelector('#quesCount');
 let score = 0;
 let quesCount = 0;
 
@@ -53,7 +54,8 @@ function quizStarted(index) {
                             <p class="boxes">${words[index].ans[2]}</p>
                             <p class="boxes">${words[index].ans[3]}</p>
                                 `;
-
+    usrScore.innerText = `Score: ${score}`;
+    quesDisplay.innerText = `Question: ${quesCount + 1} / ${words.length}`;
     const choiceAns = choiceBox.querySelectorAll('.boxes');
     // getting all choices answers 
     for (i = 0; i < choiceAns.length; i++) {
@@ -68,6 +70,7 @@ function optionSelected(ans) {
     let userChoice = ans.textContent; // getting user selected option
     if (userChoice === words[quesCount].correct) {
         score++;
+        usrScore.innerText = `Score: ${score}`;
         // correctAns.innerText = `Score: ${score}`; // updating score
         console.log("correct answer")
         ans.classList.add('correct');    // adding class if answer is correct 
@@ -95,9 +98,6 @@ nextBtn.onclick = () => {
     nextBtn.classList.add('d-none');
     // getting next question from questions array
     quesCount++; // next question 
-
-
-
     if (quesCount < words.length) {
         quizStarted(quesCount);
         for (i = 0; i < choiceBox.children.length; i++) {
