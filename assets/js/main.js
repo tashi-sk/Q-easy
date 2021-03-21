@@ -36,26 +36,41 @@ const quesDisplay = document.querySelector('#quesCount');
 let score = 0;
 let quesCount = 0;
 
+// https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array this method is used to shuffle the questions from array 
+function fisherYates(array) {
+    var count = array.length,
+        randomnumber,
+        temp;
+    while (count) {
+        randomnumber = Math.random() * count-- | 0;
+        temp = array[count];
+        array[count] = array[randomnumber];
+        array[randomnumber] = temp
+    }
+}
+
 
 // When start button pressed quiz starts
 startGameBtn.onclick = () => {
     document.querySelector('.quiz-content').classList.add('d-none');
     document.querySelector('.quiz-start').classList.remove('d-none');
-    quizStarted(quesCount)
+   
+    fisherYates(words);
+    quizStarted(quesCount);
+
 }
 
 // current question from array
 function quizStarted(index) {
     questionDiv.innerHTML = `<h4>${words[index].question}</h4>`;
-    // correctAns.innerText = `Score: ${score}`;
-    // quesInfo.innerText = `${quesCount + 1}/${words.length}`;
     choiceBox.innerHTML = `<p class="boxes">${words[index].ans[0]}</p>
                             <p class="boxes">${words[index].ans[1]}</p>
                             <p class="boxes">${words[index].ans[2]}</p>
                             <p class="boxes">${words[index].ans[3]}</p>
                                 `;
+     nextBtn.style.display = "hidden";
     usrScore.innerText = `Score: ${score}`;
-    quesDisplay.innerText = `Question: ${quesCount + 1} / ${words.length}`;
+    quesDisplay.innerText = `Question: ${quesCount + 1} / ${words.length}`; // Display question que 
     const choiceAns = choiceBox.querySelectorAll('.boxes');
     // getting all choices answers 
     for (i = 0; i < choiceAns.length; i++) {
@@ -104,6 +119,18 @@ nextBtn.onclick = () => {
             choiceBox.children[i].classList.remove('disabled'); // enable all choices
         }
     } else {
-       console.log("quiz finished");
+        questionDiv.innerHTML = "";
+        console.log("quiz finished");
+        showScore();
     }
 }
+
+function showScore() {
+    document.querySelector('.quiz-start').innerHTML = `<h4 class="last-screen">You Scored ${score}</h4><br>
+                            <button type="button" class="button-class" id="rstQuiz">Restart</button>
+                            `;
+        document.querySelector('#rstQuiz').onclick = function () {
+            location.reload();
+       }
+}
+
