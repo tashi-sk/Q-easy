@@ -60,7 +60,7 @@ body {
     background-color: rgba(3, 73, 179, 0.4);
 }
 
-.quiz-content>button {
+.quiz-content>button, #rstQuiz {
     border: 1px solid white;
     padding: 10px;
     background-color: transparent;
@@ -82,10 +82,16 @@ body {
     transform: scale(1.3, 1.3);
 }
 
+#rstQuiz:hover {
+     background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
 /* ------------------------- Quiz Question and Answers ------------------------------ */
 
 .quiz-start {
     justify-content: space-evenly;
+    min-height: 600px;
     text-align: center;
     position: relative;
     bottom: 125px;
@@ -109,6 +115,7 @@ body {
     text-align:center;
     letter-spacing: 2px;
 }
+
 
 .bottom-info {
     color: greenyellow;
@@ -169,6 +176,7 @@ body {
     width: 80px;
     letter-spacing: 1px;
     transition: 1s all;
+    margin-top: 25px;
 }
 
 #nextBtn:hover {
@@ -180,29 +188,32 @@ body {
     pointer-events: none;
 }
 .boxes {
+    padding: 10px;
+    margin: 5px auto;
     border-radius: 15px;
+    width: 55%;
 }
 .boxes:hover {
-    color: black;
-    background-color: rgba(80, 80, 80, 0.589);
+    color: rgba(25, 24, 92, 0.877);
+    background-color: #fff;
     cursor: pointer;
     outline: none;
 }
 
+.last-screen {
+    margin-top: 225px;
+}
+
 @media (max-width: 600px){
     .quiz-start {
-        padding: 65px 30px;
-        margin-top: 150px;
+        padding: 55px 30px;
+        margin-top: 260px;
     }
     .question>h4 {
         font-size: 1.8rem;
         transform: scale(1);
         text-align: center;
     }
-   
-    #nextBtn {
-   /* margin-top: 15px; */
-}
 }
 
 
@@ -211,5 +222,8 @@ body {
     .question>h4 {
         font-size: 2.6rem!important;
         transform: scale(1.3);
+    }
+    .boxes {
+         width: 35%;
     }
 }
