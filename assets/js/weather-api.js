@@ -1,4 +1,5 @@
 
+
 var record;
 const url1 = "https://api.openweathermap.org/data/2.5/weather?q=";
 
@@ -23,13 +24,20 @@ document.querySelector('#checkWeather').onclick = () => {
 }
 
 
+
 function showWeather(city) {
-    console.log(city.name);
-    console.log(`Temp : ${(city.main.temp-273.15).toFixed(1)} C`);
-    document.querySelector('#weatherReport').innerText = `${city.name} ${(city.main.temp-273.15).toFixed(1)}C`;
+   var code = city.weather[0].id;
+     console.log(city.name);
+    console.log(`Temp : ${(city.main.temp - 273.15).toFixed(1)} C`);
+   
+    document.querySelector('#weatherReport').innerText = `${city.name} ${(city.main.temp - 273.15).toFixed(1)}C`;
+    console.log(city.weather[0].id);
+    document.querySelector('#desc').classList.remove('d-none');
+    document.querySelector('#desc').innerText = `Forecast: ${city.weather[0].main}`;
 
 }
 
 cityName.onfocus = () => {
-     document.querySelector('#weatherReport').innerText = "";
+    document.querySelector('#desc').classList.add('d-none')
+    document.querySelector('#weatherReport').innerText = "";
 }
