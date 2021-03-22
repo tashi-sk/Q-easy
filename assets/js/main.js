@@ -68,7 +68,7 @@ function quizStarted(index) {
                             <p class="boxes">${words[index].ans[2]}</p>
                             <p class="boxes">${words[index].ans[3]}</p>
                                 `;
-     nextBtn.style.display = "hidden";
+    //  nextBtn.style.display = "hidden";
     usrScore.innerText = `Score: ${score}`;
     quesDisplay.innerText = `Question: ${quesCount + 1} / ${words.length}`; // Display question que 
     const choiceAns = choiceBox.querySelectorAll('.boxes');
@@ -119,7 +119,7 @@ nextBtn.onclick = () => {
             choiceBox.children[i].classList.remove('disabled'); // enable all choices
         }
     } else {
-        questionDiv.innerHTML = "";
+        // questionDiv.innerHTML = "";
         console.log("quiz finished");
         showScore();
     }
