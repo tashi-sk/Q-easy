@@ -5,12 +5,10 @@ body {
     padding:0;
     box-sizing: border-box;
     font-family: "Ranchers", sans-serif;
-    height: 100vh;
 }
 .body {
-    background-image: url('/images/main-bg.jpg');
+    background-image: url('assets/images/main-bg.jpg');
     background-repeat: no-repeat;
-    background-position: fixed;
     background-size: cover;
     overflow-x: hidden;
     height: 100vh;
