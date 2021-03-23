@@ -8,13 +8,8 @@ body {
     background-image: url('../images/main-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 100vh; */
     overflow-x: hidden;
-}
-.body {
-    /* height: 100vh; */
-}
-
+}#
 /* ----------------------Navigation------------------------*/
 #logo {
     font-size: 1.9rem;
@@ -25,7 +20,7 @@ body {
 
 #logo>span {
     font-size: 1.4rem;
-    color:red;
+    color:#ff0000;
     letter-spacing: 2px;
     font-weight: 200;
 }
@@ -34,7 +29,7 @@ body {
     line-height: 60px;
     background-color: rgba(0, 136, 248, 0.877)!important;
     color: #fff !important;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #fff;
     border-width: thick;
     letter-spacing: 2px;
     
@@ -43,15 +38,15 @@ body {
 .error {
     color: #fff;
     border-radius: 5px;
-    border: 2px solid red;
+    border: 2px solid #ff0000;
     text-align: center;
    animation-name: example;
   animation-duration: 4s;
 }
 @keyframes example {
-  0%   {color: red;}
+  0%   {color: #ff0000;}
   25%  {color: #fff;}
-  50%  {color: red;}
+  50%  {color: #ff0000;}
   100% {color: #fff;}
 }
 /* ----------------------Quiz Container------------------------- */
@@ -70,7 +65,7 @@ body {
 }
 
 .quiz-content>button, #rstQuiz, #rulesBackBtn {
-    border: 1px solid white;
+    border: 1px solid #fff;
     padding: 10px;
     background-color: transparent;
     color: #fff;
@@ -103,7 +98,7 @@ body {
 }
 
 #sendBtn,#formSubmitted {
-    border: 1px solid white;
+    border: 1px solid #fff;
     padding: 10px;
     background-color: #0093E9;
     color: #fff;
@@ -160,7 +155,7 @@ hr {
 
 
 .bottom-info {
-    color: greenyellow;
+    color: #adff2f;
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
