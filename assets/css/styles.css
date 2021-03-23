@@ -3,31 +3,17 @@
 body {
     margin: 0;
     padding:0;
-    /* box-sizing: border-box; */
-    width: 100vw;
+    box-sizing: border-box;
     font-family: "Ranchers", sans-serif;
-    background-image: url('/assets/images/main-bg.jpg');
+  
+}
+.body {
+     background-image: url('/assets/images/main-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
 }
 
-/* .body {
-    position: relative; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.body::before{
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(0,0,0,0.25); 
-} */
 /* ----------------------Navigation------------------------*/
 #logo {
     font-size: 1.8rem;
