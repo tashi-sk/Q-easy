@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="https://kit.fontawesome.com/02b0ff02b7.js" crossorigin="anonymous"></script>
     <title>Multiple Answers Quiz</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_YycdtfqXdmtYe7W69Be6O");
+        })();
+    </script>
 </head>
 
 <body>
@@ -55,16 +62,15 @@
         <div class="contact-container">
             <h3 class="text-center mb-3">Contact Us with Your Query
             </h3>
-            <form>
+            <form onsubmit="return sendMail(this);">
                 <input type="text" name="name" class="form-control mb-3" id="fullname" placeholder="Name" required />
                 <input type="text" name="emailaddress" class="form-control mb-3" id="emailaddress" placeholder="Email"
                     required />
                 <textarea name="userquery" class="form-control mb-3" id="userquery" rows="5"
                     placeholder="Your Query ...."></textarea>
-                <div id="sendBtnDiv">
+                <div id="BtnDiv">
                     <button type="submit" class="center-block" id="sendBtn">Send</button>
                 </div>
-
             </form>
         </div>
 
@@ -93,6 +99,7 @@
         integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
     <script defer src="assets/js/weather-api.js"></script>
+    <script defer src="assets/js/email.js"></script>
 </body>
 
 </html>
