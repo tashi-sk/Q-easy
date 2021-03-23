@@ -51,6 +51,10 @@ function fisherYates(array) {
 
 
 // When start button pressed quiz starts
+document.querySelector('#gameInfo').onclick = () => {
+    document.querySelector('#rules').classList.remove('d-none');
+    document.querySelector('.quiz-content').classList.add('d-none');
+}
 startGameBtn.onclick = () => {
     document.querySelector('.quiz-content').classList.add('d-none');
     document.querySelector('.quiz-start').classList.remove('d-none');
@@ -77,7 +81,6 @@ function quizStarted(index) {
         choiceAns[i].setAttribute("onclick", "optionSelected(this)");
     }
 }
-
 
 // checking user choice answer
 function optionSelected(ans) {
