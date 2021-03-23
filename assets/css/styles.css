@@ -8,10 +8,11 @@ body {
   
 }
 .body {
-     background-image: url('/assets/images/main-bg.jpg');
+    background-image: url('/assets/images/main-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
+    height: 100vh;
 }
 
 /* ----------------------Navigation------------------------*/
@@ -35,8 +36,23 @@ body {
     border-bottom: 1px solid white;
     border-width: thick;
     letter-spacing: 2px;
+    
 }
 
+.error {
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid red;
+    text-align: center;
+   animation-name: example;
+  animation-duration: 4s;
+}
+@keyframes example {
+  0%   {color: red;}
+  25%  {color: #fff;}
+  50%  {color: red;}
+  100% {color: #fff;}
+}
 /* ----------------------Quiz Container------------------------- */
 
 .quiz-landing {
@@ -74,7 +90,25 @@ body {
      background-color: #0093E9;
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
-
+#sendBtn {
+    border: 1px solid white;
+    padding: 10px;
+    background-color: #0093E9;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 40px;
+    width: 80px;
+    transition: 1s all;
+}
+#sendBtn:hover {
+    color: #0093E9;
+      background-color: transparent;
+      border: 1px solid #0093E9; 
+}
+#sendBtnDiv {
+    text-align: center;
+    font-size: 1.3rem;
+}
 /* ------------------------- Quiz Question and Answers ------------------------------ */
 hr {
     width: 80%;
@@ -194,7 +228,10 @@ hr {
 .last-screen {
     margin-top: 100px;
 }
-
+.contact-container {
+    width: 60%;
+    margin: 200px auto;
+}
 @media (max-width: 600px){
     .quiz-start {
         padding: 55px 30px;
@@ -204,6 +241,9 @@ hr {
         font-size: 1.8rem;
         transform: scale(1);
         text-align: center;
+    }
+    .contact-container {
+    width: 80%;
     }
 }
 
