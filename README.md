@@ -2,7 +2,7 @@
 ### Q-easy is an interactive website designed for users to play a quiz game to test their knowledge.
 For now the application quiz contains only gernal knowledge questions.
 
-You can view the live site here 
+You can view the live site [here](https://tashi-sk.github.io/Q-easy/) 
 
 ## Contents
 
