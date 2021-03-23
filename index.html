@@ -11,14 +11,14 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="https://kit.fontawesome.com/02b0ff02b7.js" crossorigin="anonymous"></script>
-    <title>Multiple Answers Quiz</title>
+    <title>Q-easy</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark nav-head">
             <div class="container-fluid">
-                <a class="navbar-brand" id="logo" href="#">Q<span>uiz</span></a>
+                <a class="navbar-brand" id="logo" href="index.html">Q <span>easy</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -68,8 +68,17 @@
                 <div> <button type="button" id="nextBtn" class="d-none">Next</button></div>
             </div>
 
-            <div class="quiz-rules">
-
+            <div class="quiz-rules" id="rulesDiv">
+                <div id="rules" class="d-none">
+                    <h4>To start the game, just click the 'Start' button!</h4>
+                    <h4>You will be given 5 questions to answer</h4>
+                    <h4>Read the question and answer using one of the 4 choices</h4>
+                    <h4>Once you have finished the round, you will see the final score!</h4>
+                    <h4>If you want to restart the Quiz, just click 'Restart' button</h4>
+                    <div class="infoBtnDiv">
+                        <Button type="button" onclick="location.reload()" id="rulesBackBtn">Back</Button>
+                    </div>
+                </div>
             </div>
         </div>
 
