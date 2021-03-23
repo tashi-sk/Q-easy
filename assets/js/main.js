@@ -1,4 +1,3 @@
-console.log("testing");
 
 const words = [{
     question: "Which sea creature has three hearts??",
@@ -88,14 +87,11 @@ function optionSelected(ans) {
     let userChoice = ans.textContent; // getting user selected option
     if (userChoice === words[quesCount].correct) {
         score++;
-        usrScore.innerText = `Score: ${score}`;
-        // correctAns.innerText = `Score: ${score}`; // updating score
-        console.log("correct answer")
+        usrScore.innerText = `Score: ${score}`; // updating score
         ans.classList.add('correct');    // adding class if answer is correct 
         nextBtn.classList.remove('d-none');
 
     } else {
-        console.log("incorrect")
         ans.classList.add("incorrect"); // adding class if answer is incorrect  
         nextBtn.classList.remove('d-none');
     }
@@ -122,8 +118,6 @@ nextBtn.onclick = () => {
             choiceBox.children[i].classList.remove('disabled'); // enable all choices
         }
     } else {
-        // questionDiv.innerHTML = "";
-        console.log("quiz finished");
         showScore();
     }
 }

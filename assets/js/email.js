@@ -1,4 +1,4 @@
-console.log("hello world");
+
 function sendMail(contactForm) {
     emailjs.send("service_bq4sfkm", "tashi", {
         "from_name": contactForm.name.value,

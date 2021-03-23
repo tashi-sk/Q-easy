@@ -11,14 +11,10 @@ document.querySelector('#checkWeather').onclick = () => {
     if (cityName) {
         xhr.open("GET", url1 + cityName + url2);
         xhr.send();
-        xhr.onprogress = function () {
-            console.log("waiting");
-        }
         xhr.addEventListener("readystatechange", function () {
             if (this.readyState === this.DONE) {
                 record = JSON.parse(this.responseText);
                 showWeather(record);
-                console.log(record);
             }
         });
     } else {
@@ -28,19 +24,12 @@ document.querySelector('#checkWeather').onclick = () => {
     }
 }
 
-
-
 function showWeather(city) {
-
     var code = city.weather[0].id;
-    console.log(city.name);
-    console.log(`Temp : ${(city.main.temp - 273.15).toFixed(1)} C`);
 
     document.querySelector('#weatherReport').innerText = `${city.name} ${(city.main.temp - 273.15).toFixed(1)}C`;
-    console.log(city.weather[0].id);
     document.querySelector('#desc').classList.remove('d-none');
     document.querySelector('#desc').innerText = `Forecast: ${city.weather[0].main}`;
-
 }
 
 cityName.onfocus = () => {
