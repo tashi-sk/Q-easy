@@ -7,7 +7,7 @@ body {
     font-family: "Ranchers", sans-serif;
 }
 .body {
-    background-image: url('assets/images/main-bg.jpg');
+    background-image: url('/workspace/Q-easy/assets/images/main-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
