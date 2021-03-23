@@ -71,7 +71,7 @@ This site was deployed through GitHub Pages using the following steps:
 * Open Git Bash on your device.
 * Change the current working directory to the location where you want the cloned directory.
 * Type git clone in the CLI and then paste the URL you copied earlier. This is what it should look like:
-   * $ git clone https://github.com/AmyOShea/MS2-KidzQuiz.git
+   * git clone https://github.com/tashi-sk/Q-easy.git
 * Press Enter to create your local clone.
 ## Credits
     * Content
