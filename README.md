@@ -18,12 +18,31 @@ You can view the live site [here](https://tashi-sk.github.io/Q-easy/)
 * User Experience
     * User Stories
 
+        * As a user i want that website is easy to navigate through the pages.
+        * As a user i want to know the rules of the Quiz.
+        * As a user i want to know the correct answer if i choose wrong answer.
+        * As a user i want to know my score while im playing Quiz.
+        * As a user i want to know how many Question are attempted/Left from Quiz.
+        * As a user i would like to use contact form if i have query or bug report to inform for the site.
+        * As a user i would like to see social media network of the site.
+        * As a user i would like to check weather condition in given city.
+
+---
+
     * Design
         * Colour Scheme
+
         ![Color pallete 1](/assets/images/color-pallete-1.png)
+
         ![color-pallete 2](/assets/images/color-pallete-2.png)
 
+---
+
         * Typography
+            * I have used onyly Ranchers font for the whole site.
+
+---
+
 
     * Wireframes
     ![mobile and tablet](/assets/images/wireframe-mob.png)
@@ -36,11 +55,23 @@ You can view the live site [here](https://tashi-sk.github.io/Q-easy/)
 
 
 ## Features
-    * Existing Features
-        *Feature 1 - allows users X to achieve Y, by having them fill out Z
+    * Current Features
+        * Site has navigational links to give user ease of acces throught out the site.
+        * Footer is provided for used to see social media network related to the site.
+        * Weather api is used to search weather quick report. User has to input city name to see condition of weather.
+        * If user search for weather report without input, an error messsage will appear to let user know.
+        * when user click on search input again the previous weather will disppear.
+        * User cannot to go to next Question in quiz until selects the answer for current question.
+        * Score is continuesly updated on every question answered to let user know the current score.
+        * Question is displayed to let user know the question attemted out of all.
+        * once the quiz is finished user will know the final score.
+        * Restart button will appear once the quiz is finished.
+        * Contact forms are provided if user wants to contact site owner for his user query.
 
     * Features Left to Implement
-        *Another feature idea
+        * I would like to add audio on every question when answer right or wrong.
+        * i would like to add background music if user want to play it while quiz is running.
+        * i would like to give user choice if he want to save his score to compare from other players score.
 
 ## Technologies Used
     * HTML5
@@ -49,6 +80,8 @@ You can view the live site [here](https://tashi-sk.github.io/Q-easy/)
     * Bootstrap
     * Balsamiq Wireframes
     * Google light house
+    * FontAwesome
+    * [Coolors](https://www.coolor.co)
 
 ## Testing
     * HTML5 validator is used to check errors. It hasfound no errors.
@@ -112,3 +145,5 @@ This site was deployed through GitHub Pages using the following steps:
     some of the code is taken and altered from this tutorial.
     * Stackoverflow was used to search for solution to shuffle the array to show different order of question on quiz next straight
     [stackoverflow code]( https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
+    * I would like to thanks Code institute and mentors for helping me out and understand the concept of coding briefly.
+    * I would like to thanks Slack community to answer my question before even i had them. 
