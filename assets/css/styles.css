@@ -50,6 +50,12 @@ body {
   100% {color: #fff;}
 }
 /* ----------------------Quiz Container------------------------- */
+.title-head>h1 {
+    text-align: center;
+    color: #adff2f;
+    margin-bottom: 40px;
+    font-size: 3rem;
+}
 #rules>h4 {
     color: #fff;
     font-size: 1.3rem;
@@ -175,7 +181,6 @@ hr {
 }      
 
 .icons>div>a {
-
     font-size: 1.6rem;
     color: white;
     text-decoration: none;
