@@ -16,6 +16,7 @@ You can view the live site [here](https://tashi-sk.github.io/Q-easy/)
 ## Contents
 
 * User Experience
+
     * User Stories
 
         * As a user i want that website is easy to navigate through the pages.
@@ -30,31 +31,37 @@ You can view the live site [here](https://tashi-sk.github.io/Q-easy/)
 ---
 
     * Design
+
         * Colour Scheme
 
-        ![Color pallete 1](/assets/images/color-pallete-1.png)
+    ![Color pallete 1](/assets/images/color-pallete-1.png)
 
-        ![color-pallete 2](/assets/images/color-pallete-2.png)
+    ![color-pallete 2](/assets/images/color-pallete-2.png)
 
 ---
 
         * Typography
-            * I have used onyly Ranchers font for the whole site.
+
+            * Only Ranchers font for the whole site.
 
 ---
 
 
     * Wireframes
-    ![mobile and tablet](/assets/images/wireframe-mob.png)
 
-    ![mobile and tablet](/assets/images/wireframe-mob2.png)
+![mobile and tablet](/assets/images/wireframe-mob.png)
 
-    ![desktop](/assets/images/desktop1.png)
+![mobile and tablet](/assets/images/wireframe-mob2.png)
 
-    ![mobile and tablet](/assets/images/desktop2.png)
+![desktop](/assets/images/desktop1.png)
+
+![mobile and tablet](/assets/images/desktop2.png)
+
+---
 
 
 ## Features
+
     * Current Features
         * Site has navigational links to give user ease of acces throught out the site.
         * Footer is provided for used to see social media network related to the site.
