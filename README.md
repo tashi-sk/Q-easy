@@ -19,6 +19,7 @@ You can view the live site [here](https://tashi-sk.github.io/Q-easy/)
 
     * User Stories
 
+        * Website is responsive on all screens.
         * As a user i want that website is easy to navigate through the pages.
         * As a user i want to know the rules of the Quiz.
         * As a user i want to know the correct answer if i choose wrong answer.
@@ -96,6 +97,7 @@ You can view the live site [here](https://tashi-sk.github.io/Q-easy/)
     * Js Hint is used to check javascript code for error. it has no error but only few warning.
     * Google Lighthouse report is below to show the results.
     ![Lighthouse](/assets/images/lighthouse.png)
+    * Site has been tested on Samsung Note9, Huawei p30 , Iphone 8, Ipad pro 3, Laptop and desktop.
 
 ---
 
