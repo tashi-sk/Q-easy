@@ -34,9 +34,9 @@ You can view the live site [here](https://tashi-sk.github.io/Q-easy/)
 
         * Colour Scheme
 
-    ![Color pallete 1](/assets/images/color-pallete-1.png)
+![Color pallete 1](/assets/images/color-pallete-1.png)
 
-    ![color-pallete 2](/assets/images/color-pallete-2.png)
+![color-pallete 2](/assets/images/color-pallete-2.png)
 
 ---
 
