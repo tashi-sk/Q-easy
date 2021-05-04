@@ -14,13 +14,13 @@ body {
 #logo {
     font-size: 1.9rem;
     letter-spacing: 2px;
-    color: #fff;
+    color: #adff2f;
     font-weight: bold;
 }
 
 #logo>span {
     font-size: 1.4rem;
-    color:#ff0000;
+    color:#ffffff;
     letter-spacing: 2px;
     font-weight: 200;
 }
@@ -247,6 +247,7 @@ hr {
 }
 .contact-container {
     width: 60%;
+    min-height: 50vh;
     margin: 200px auto;
 }
 @media (max-width: 600px){
