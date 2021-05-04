@@ -108,6 +108,13 @@ You can view the live site [here](https://tashi-sk.github.io/Q-easy/)
 * once the form is submitted properly, succes message will appear fater it.
 
 ---
+## Bugs Report
+
+* Logo color was initially set to red. which was hard to see on blue background so its changed to yellow width green shade.
+
+* Contact page had a issue after submitting the form the height of page was going back according to the text populated in the div hence was causing white background. is fixed to min-height property to keep it covered till footer.
+
+---
 
 ## Deployment
 
