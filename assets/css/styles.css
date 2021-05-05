@@ -253,7 +253,7 @@ hr {
 @media (max-width: 600px){
     .quiz-start {
         padding: 55px 30px;
-        margin-top: 260px;
+        margin-top: 160px;
     }
     .question>h4 {
         font-size: 1.8rem;
